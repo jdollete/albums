@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -35,9 +35,5 @@ class AlbumList extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-
-});
 
 export default AlbumList;
