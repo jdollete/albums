@@ -17,7 +17,7 @@ class App extends React.Component {
   render() {
     return (
       <View>
-        <Header headerText={'Albums'}/>
+        <Header headerText={'Albums'} />
         <AlbumList />
       </View>
     );
