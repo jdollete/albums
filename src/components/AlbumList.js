@@ -7,10 +7,14 @@ class AlbumList extends React.Component {
     super(props);
   }
 
+  componentWillMount() {
+    console.log("componentWillMount in Albums!!");
+  }
+
   render() {
     return (
       <View>
-        <Text>Album List!!!</Text>
+        <Text>Album List!!!!!</Text>
       </View>
     );
   }
