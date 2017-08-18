@@ -1,9 +1,10 @@
 // Import a libraries
 import React from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 
 // Import components
-import Header from './src/components/Header'
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 
 // Create Components
@@ -15,7 +16,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <Header headerText={'Albums'}/>
+      <View>
+        <Header headerText={'Albums'}/>
+        <AlbumList />
+      </View>
     );
   }
 }
