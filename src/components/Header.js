@@ -1,17 +1,32 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 
-const Header = () => {
-  const { textStyle, viewStyle } = styles;
+// const Header = (props) => {
+//
+//   return (
+//     <View style={styles.viewStyle}>
+//     <Text style={styles.textStyle}>{props.headerText}</Text>
+//     </View>
+//   );
+// };
 
-  return (
-    <View style={viewStyle}>
-      <Text style={textStyle}>Albums!</Text>
-    </View>
-  );
-};
+class Header extends React.Component {
 
-const styles = {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <View style={styles.viewStyle}>
+        <Text style={styles.textStyle}>{this.props.headerText}</Text>
+      </View>
+    );
+  }
+}
+
+
+const styles = StyleSheet.create({
   viewStyle: {
     backgroundColor: '#F8F8F8',
     justifyContent: 'center',
@@ -27,6 +42,6 @@ const styles = {
   textStyle: {
     fontSize: 20
   }
-};
+});
 
 export default Header;
